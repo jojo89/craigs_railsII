@@ -5,7 +5,7 @@ CraigsList::Application.routes.draw do
 
   resources :users
 
-  get "login" => "home#login"
+  get "login" => 'home#login'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

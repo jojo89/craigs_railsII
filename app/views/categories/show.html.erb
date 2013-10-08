@@ -1,0 +1,8 @@
+<h1><%= @category.name  %></h1>
+<% @posts.each do |p| %>
+<li><%= link_to p.title, category_post_path(@category, p) %></li>
+<li><%= link_to 'destroy', category_post_path(p.category_id, p),  :method => :delete %></li><br>
+<% end %>
+
+<%= link_to "create_new_post", new_category_post_path(@category) %>
+

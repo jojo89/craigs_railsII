@@ -1,0 +1,12 @@
+<h1>New Post for: <%= @category.name  %></h1>
+
+<%= form_for @post, url: category_posts_path(@category) do |post| %>
+  <%= post.text_field :title %>
+  <%= post.text_field :body %>
+  <%= post.submit "Create" %>
+<% end %>
+
+
+
+
+

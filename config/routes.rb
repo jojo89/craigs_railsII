@@ -3,6 +3,11 @@ CraigsList::Application.routes.draw do
     resources :posts
   end
 
+  resources :users
+
+  get "login" => "home#login"
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

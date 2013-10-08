@@ -1,0 +1,5 @@
+  <%= form_for @user, url: users_path do |u|  %>
+  <%= u.text_field :name  %>
+  <%= u.text_field :password %>
+  <%= u.submit "submit" %>
+  <% end %>

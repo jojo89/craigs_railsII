@@ -1,0 +1,5 @@
+<%= form_for :login, url: sessions_path do |post| %>
+  <%= post.text_field :name %>
+  <%= post.text_field :password %>
+  <%= post.submit "Create" %>
+<% end %>
